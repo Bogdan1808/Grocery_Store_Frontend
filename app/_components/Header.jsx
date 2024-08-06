@@ -51,7 +51,7 @@ function Header() {
                 {categoryList.map((category, index)=>(
                   <DropdownMenuItem className="flex gap-2 items-center">
                     <Image src={
-                      process.env.NEXT_PUBLIC_BACKEND_BASE_URL+
+                      process.env.NEXT_PUBLIC_BACKEND_BASE_URL +
                       category?.attributes?.icon?.data?.attributes?.url}
                       unoptimized={true}
                     alt='icon'

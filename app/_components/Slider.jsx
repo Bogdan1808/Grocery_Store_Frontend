@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import GlobalApi from '../_utils/GlobalApi';
+import GlobalApi from '../_utils/GlobalApi'
+
 import {
     Carousel,
     CarouselContent,
@@ -15,7 +16,7 @@ function Slider({sliderList = []}) {
     <CarouselContent>
         {sliderList.map((slider, index)=>(
             <CarouselItem key={index}>
-                <Image src={process.env.NEXT_PUBLIC_BACKEND_BASE_URL+slider.attributes?.image?.data?.attrbutes?.url} 
+                <Image src={process.env.NEXT_PUBLIC_BACKEND_BASE_URL + slider.attributes?.image?.data?.attrbutes?.url} 
                     width = {1000}
                     height = {400}
                     alt = 'slider'
